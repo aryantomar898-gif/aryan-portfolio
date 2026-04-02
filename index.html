@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Aryan Tomar — Cybersecurity Analyst, Penetration Tester & Threat Detection Specialist. B.Tech CSE (AI) student with hands-on experience in vulnerability assessment and network security.">
+    <title>Aryan Tomar | Cybersecurity Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="brand-bracket">[</span>
+                <span class="brand-text">ARYAN</span>
+                <span class="brand-bracket">]</span>
+            </div>
+            <div class="loader-bar-container">
+                <div class="loader-bar" id="loader-bar"></div>
+            </div>
+            <div class="loader-status" id="loader-status">INITIALIZING SECURE CONNECTION...</div>
+        </div>
+    </div>
+
+    <!-- Scanline overlay -->
+    <div class="scanline-overlay"></div>
+
+    <!-- Particle canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Matrix rain canvas -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- Cursor trail canvas -->
+    <canvas id="cursor-trail"></canvas>
+
+    <!-- Navigation -->
+    <nav id="main-nav" class="nav">
+        <div class="nav-brand">
+            <span class="brand-bracket">[</span>
+            <span class="brand-text">ARYAN</span>
+            <span class="brand-bracket">]</span>
+            <span class="brand-cursor">_</span>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <a href="#home" class="nav-link active" data-section="home">
+                <span class="nav-link-prefix">01.</span> Home
+            </a>
+            <a href="#about" class="nav-link" data-section="about">
+                <span class="nav-link-prefix">02.</span> About
+            </a>
+            <a href="#skills" class="nav-link" data-section="skills">
+                <span class="nav-link-prefix">03.</span> Arsenal
+            </a>
+            <a href="#experience" class="nav-link" data-section="experience">
+                <span class="nav-link-prefix">04.</span> Missions
+            </a>
+            <a href="#projects" class="nav-link" data-section="projects">
+                <span class="nav-link-prefix">05.</span> Operations
+            </a>
+            <a href="#certifications" class="nav-link" data-section="certifications">
+                <span class="nav-link-prefix">06.</span> Credentials
+            </a>
+            <a href="#blog" class="nav-link" data-section="blog">
+                <span class="nav-link-prefix">07.</span> Intel
+            </a>
+            <a href="#contact" class="nav-link" data-section="contact">
+                <span class="nav-link-prefix">08.</span> Contact
+            </a>
+        </div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-grid-bg"></div>
+        <div class="hero-content">
+            <div class="hero-terminal">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="terminal-title">aryan@kali:~#</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span class="typed-text" id="typed-intro"></span>
+                        <span class="cursor-blink">▊</span>
+                    </p>
+                </div>
+            </div>
+            <div class="hero-text-container">
+                <p class="hero-subtitle glitch-hover">CYBERSECURITY ANALYST & PENETRATION TESTER</p>
+                <h1 class="hero-title">
+                    <span class="hero-line">Hi, I'm</span>
+                    <span class="hero-line highlight-line">
+                        <span class="glitch" data-text="Aryan Tomar">Aryan Tomar</span>
+                    </span>
+                </h1>
+                <p class="hero-description">
+                    Penetration Tester • Threat Hunter • Security Researcher
+                    <br>
+                    <span class="accent-text">Breaking systems to make them stronger. Building security from the ground
+                        up.</span>
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary" id="hero-cta-primary">
+                        <span class="btn-icon">⟩</span> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-outline" id="hero-cta-secondary">
+                        <span class="btn-icon">◈</span> Initiate Contact
+                    </a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item" data-tilt>
+                    <span class="stat-number" data-target="4">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Security Projects</span>
+                </div>
+                <div class="stat-item" data-tilt>
+                    <span class="stat-number" data-target="4">0</span>
+                    <span class="stat-suffix"></span>
+                    <span class="stat-label">Certifications</span>
+                </div>
+                <div class="stat-item" data-tilt>
+                    <span class="stat-number" data-target="10">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Security Tools</span>
+                </div>
+                <div class="stat-item" data-tilt>
+                    <span class="stat-number" data-target="1">0</span>
+                    <span class="stat-suffix"></span>
+                    <span class="stat-label">Active Internship</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <span>SCROLL DOWN</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="section-header">
+            <span class="section-tag">// ABOUT ME</span>
+            <h2 class="section-title">
+                <span class="section-number">02.</span> Threat Profile
+            </h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-image-container">
+                <div class="hex-frame">
+                    <div class="hex-glow"></div>
+                    <div class="profile-placeholder">
+                        <div class="shield-icon">
+                            <svg viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M50 5 L95 25 L95 65 C95 85 75 105 50 115 C25 105 5 85 5 65 L5 25 Z"
+                                    stroke="currentColor" stroke-width="2" fill="none" />
+                                <path d="M50 25 L40 50 L25 50 L37 62 L32 80 L50 70 L68 80 L63 62 L75 50 L60 50 Z"
+                                    fill="currentColor" opacity="0.3" />
+                                <circle cx="50" cy="50" r="20" stroke="currentColor" stroke-width="1.5" fill="none"
+                                    stroke-dasharray="4 4" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hex-scan-line"></div>
+                </div>
+                <div class="about-status">
+                    <div class="status-dot"></div>
+                    <span>OPEN TO OPPORTUNITIES</span>
+                </div>
+            </div>
+            <div class="about-text">
+                <div class="about-terminal">
+                    <div class="about-terminal-line">
+                        <span class="prompt-symbol">❯</span>
+                        <span class="command">cat /etc/profile.d/aryan.conf</span>
+                    </div>
+                </div>
+                <p class="about-paragraph">
+                    I'm <strong>Aryan Tomar</strong>, a detail-oriented <strong>B.Tech CSE (AI Specialization)</strong>
+                    student
+                    at MIET Meerut (AKTU) specializing in <strong>Cybersecurity</strong> with hands-on experience in
+                    penetration testing, vulnerability assessment, and network security.
+                </p>
+                <p class="about-paragraph">
+                    Proficient in <strong>Wireshark, Burp Suite, Metasploit, Nmap, and SQLMap</strong>, I'm actively
+                    contributing to real-world security workflows through my internship at
+                    <strong>Apex Planet Software Pvt. Ltd.</strong> — conducting web app pentesting, analyzing live
+                    network traffic, and documenting threat vectors.
+                </p>
+                <p class="about-paragraph">
+                    I build security tools in Python, participate in CTF challenges, and constantly push
+                    the boundaries of what I know. Currently seeking an <strong>entry-level Cybersecurity
+                        or SOC Analyst</strong> role to drive impactful security outcomes.
+                </p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-icon">⬡</span>
+                        <span>Penetration Testing</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">⬡</span>
+                        <span>Vulnerability Assessment</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">⬡</span>
+                        <span>Web App Security</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">⬡</span>
+                        <span>Network Security</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">⬡</span>
+                        <span>OSINT & Recon</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">⬡</span>
+                        <span>Threat Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills / Arsenal Section -->
+    <section id="skills" class="section skills-section">
+        <div class="section-header">
+            <span class="section-tag">// SKILL SET</span>
+            <h2 class="section-title">
+                <span class="section-number">03.</span> Cyber Arsenal
+            </h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="skills-grid">
+            <!-- Security Tools -->
+            <div class="skill-card" data-category="tools" data-tilt>
+                <div class="skill-card-header">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7v6c0 5.55 4.84 10.74 10 12 5.16-1.26 10-6.45 10-12V7L12 2z" />
+                            <path d="M9 12l2 2 4-4" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-card-title">Security Tools</h3>
+                    <div class="skill-threat-level">
+                        <span class="threat-label">PROFICIENCY</span>
+                        <div class="threat-bars">
+                            <span class="bar active"></span>
+                            <span class="bar active"></span>
+                            <span class="bar active"></span>
+                            <span class="bar active"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-name">Wireshark</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-level="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Burp Suite</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-level="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Nmap</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-level="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Metasploit</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-level="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">SQLMap / OWASP ZAP</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-level="82"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Offensive Security -->
+            <div class="skill-card" data-category="offensive" data-tilt>
+                <div class="skill-card-header">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path
+                                d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-card-title">Offensive Security</h3>
+                    <div class="skill-threat-level">
+                        <span class="threat-label">THREAT LVL</span>
+                        <div class="threat-bars">
+                            <span class="bar active"></span>
+                            <span class="bar active"></span>
+                            <span class="bar active"></span>
+                            <span class="bar active"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-name">Penetration Testing</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-level="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Web App Security</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-level="82"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Vulnerability Assessment</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-level="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">OSINT / Recon</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-level="78"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">SOC Operations</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-level="72"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Programming -->
+            <div class="skill-card" data-category="programming" data-tilt>
+                <div class="skill-card-header">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polyline points="16,18 22,12 16,6" />
+                            <polyline points="8,6 2,12 8,18" />
+                            <line x1="14" y1="4" x2="10" y2="20" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-card-title">Programming</h3>
+                    <div class="skill-threat-level">
+                        <span class="threat-label">MASTERY</span>
+                        <div class="threat-bars">
+                            <span class="bar active"></span>
+                            <span class="bar active"></span>
+                            <span class="bar active"></span>
+                            <span class="bar active"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-level="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Bash / Shell Scripting</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-level="78"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">C</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-level="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Java</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-level="68"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">SQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-level="75"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Concepts & Networking -->
+            <div class="skill-card" data-category="concepts" data-tilt>
+                <div class="skill-card-header">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 6v6l4 2" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-card-title">Concepts & Networking</h3>
+                    <div class="skill-threat-level">
+                        <span class="threat-label">KNOWLEDGE</span>
+                        <div class="threat-bars">
+                            <span class="bar active"></span>
+                            <span class="bar active"></span>
+                            <span class="bar active"></span>
+                            <span class="bar active"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-name">TCP/IP & OSI Model</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-level="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">SIEM & IDS/IPS</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-level="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">CVE/CVSS & Threat Intel</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-level="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Cryptography</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-level="72"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Packet Analysis</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-level="85"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tool Tags -->
+        <div class="tool-cloud">
+            <h3 class="tool-cloud-title">
+                <span class="terminal-prompt">~/tools$</span> ls -la
+            </h3>
+            <div class="tool-tags">
+                <span class="tool-tag">Kali Linux</span>
+                <span class="tool-tag">Wireshark</span>
+                <span class="tool-tag">Burp Suite</span>
+                <span class="tool-tag">Nmap</span>
+                <span class="tool-tag">Metasploit</span>
+                <span class="tool-tag">SQLMap</span>
+                <span class="tool-tag">OWASP ZAP</span>
+                <span class="tool-tag">Proxychains</span>
+                <span class="tool-tag">Tor</span>
+                <span class="tool-tag">Python</span>
+                <span class="tool-tag">Scapy</span>
+                <span class="tool-tag">Ubuntu</span>
+                <span class="tool-tag">VirtualBox</span>
+                <span class="tool-tag">GitHub</span>
+                <span class="tool-tag">Bash</span>
+                <span class="tool-tag">OWASP Top 10</span>
+                <span class="tool-tag">MITRE ATT&CK</span>
+                <span class="tool-tag">TCP/IP</span>
+                <span class="tool-tag">IDS/IPS</span>
+                <span class="tool-tag">SIEM</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Missions Section -->
+    <section id="experience" class="section experience-section">
+        <div class="section-header">
+            <span class="section-tag">// CAREER MISSIONS</span>
+            <h2 class="section-title">
+                <span class="section-number">04.</span> Mission History
+            </h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="experience-timeline">
+            <div class="exp-timeline-track"></div>
+
+            <div class="exp-item">
+                <div class="exp-date">
+                    <span class="exp-year">2025 — Present</span>
+                    <span class="exp-duration">Ongoing</span>
+                </div>
+                <div class="exp-node">
+                    <div class="exp-node-dot"></div>
+                    <div class="exp-node-ring"></div>
+                </div>
+                <div class="exp-card" data-tilt>
+                    <div class="exp-card-rank">INTERNSHIP</div>
+                    <h3 class="exp-card-title">Cybersecurity Intern</h3>
+                    <p class="exp-card-company">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14"
+                            height="14">
+                            <rect x="2" y="7" width="20" height="14" rx="2" />
+                            <path d="M16 7V5a4 4 0 00-8 0v2" />
+                        </svg>
+                        Apex Planet Software Pvt. Ltd. — Remote
+                    </p>
+                    <p class="exp-card-desc">
+                        Conducting vulnerability assessments and web app penetration testing (SQLi, XSS, auth bypass)
+                        using Burp Suite, SQLMap, and OWASP methodologies. Analyzing live network traffic with Wireshark
+                        and Nmap to detect anomalies and potential threat vectors. Gaining hands-on exposure to incident
+                        response workflows, threat intelligence, and vulnerability lifecycle management.
+                    </p>
+                    <div class="exp-card-tags">
+                        <span>Pentesting</span>
+                        <span>Burp Suite</span>
+                        <span>SQLMap</span>
+                        <span>Wireshark</span>
+                        <span>OWASP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-date">
+                    <span class="exp-year">2024 — 2028</span>
+                    <span class="exp-duration">B.Tech</span>
+                </div>
+                <div class="exp-node">
+                    <div class="exp-node-dot"></div>
+                    <div class="exp-node-ring"></div>
+                </div>
+                <div class="exp-card" data-tilt>
+                    <div class="exp-card-rank">EDUCATION</div>
+                    <h3 class="exp-card-title">B.Tech — Computer Science & Engineering (AI Specialization)</h3>
+                    <p class="exp-card-company">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14"
+                            height="14">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                            <path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5" />
+                        </svg>
+                        MIET Meerut — AKTU
+                    </p>
+                    <p class="exp-card-desc">
+                        Focused on Cybersecurity, Artificial Intelligence, and Network Systems.
+                        Actively building security tools, participating in CTF challenges, and
+                        developing real-world penetration testing skills alongside academic coursework.
+                    </p>
+                    <div class="exp-card-tags">
+                        <span>Cybersecurity</span>
+                        <span>AI/ML</span>
+                        <span>Network Systems</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-date">
+                    <span class="exp-year">2023</span>
+                    <span class="exp-duration">Class XII</span>
+                </div>
+                <div class="exp-node">
+                    <div class="exp-node-dot"></div>
+                    <div class="exp-node-ring"></div>
+                </div>
+                <div class="exp-card" data-tilt>
+                    <div class="exp-card-rank">EDUCATION</div>
+                    <h3 class="exp-card-title">Class XII — Science (PCM) | 87%</h3>
+                    <p class="exp-card-company">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14"
+                            height="14">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                            <path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5" />
+                        </svg>
+                        Army Public School, Bareilly
+                    </p>
+                    <p class="exp-card-desc">
+                        Chemistry: 95/100 — Highest in District. Strong foundation in analytical
+                        thinking and problem-solving that translates directly into cybersecurity work.
+                    </p>
+                    <div class="exp-card-tags">
+                        <span>Science (PCM)</span>
+                        <span>District Topper</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects / Operations Section -->
+    <section id="projects" class="section projects-section">
+        <div class="section-header">
+            <span class="section-tag">// OPERATIONS</span>
+            <h2 class="section-title">
+                <span class="section-number">05.</span> Field Operations
+            </h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card" id="project-1" data-tilt>
+                <div class="project-card-header">
+                    <div class="project-status">
+                        <span class="status-indicator completed"></span>
+                        <span>COMPLETED</span>
+                    </div>
+                    <span class="project-classification">OPEN SOURCE</span>
+                </div>
+                <div class="project-icon-container">
+                    <div class="project-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="4" y="8" width="40" height="32" rx="3" />
+                            <path d="M4 16h40" />
+                            <circle cx="10" cy="12" r="1.5" fill="currentColor" />
+                            <circle cx="16" cy="12" r="1.5" fill="currentColor" />
+                            <circle cx="22" cy="12" r="1.5" fill="currentColor" />
+                            <path d="M12 24h24M12 30h16" stroke-width="1.5" stroke-dasharray="2 2" />
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="project-title">Network Packet Capture & Analysis Tool</h3>
+                <p class="project-description">
+                    Built a custom packet sniffer in Python/Scapy for live TCP/IP traffic capture
+                    with protocol-level forensic analysis and automated anomaly detection. Enables
+                    real-time monitoring of network traffic with deep packet inspection capabilities.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Scapy</span>
+                    <span class="tech-tag">Wireshark</span>
+                    <span class="tech-tag">TCP/IP</span>
+                </div>
+                <div class="project-metrics">
+                    <div class="metric">
+                        <span class="metric-value">TCP/IP</span>
+                        <span class="metric-label">Protocol Analysis</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">Live</span>
+                        <span class="metric-label">Traffic Capture</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">Auto</span>
+                        <span class="metric-label">Anomaly Detection</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" id="project-2" data-tilt>
+                <div class="project-card-header">
+                    <div class="project-status">
+                        <span class="status-indicator completed"></span>
+                        <span>COMPLETED</span>
+                    </div>
+                    <span class="project-classification">AI/ML</span>
+                </div>
+                <div class="project-icon-container">
+                    <div class="project-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M24 4C13 4 4 13 4 24s9 20 20 20 20-9 20-20S35 4 24 4z" />
+                            <path d="M4 24h40" />
+                            <path d="M24 4c5 5 8 12 8 20s-3 15-8 20" />
+                            <path d="M24 4c-5 5-8 12-8 20s3 15 8 20" />
+                            <circle cx="24" cy="24" r="6" fill="none" stroke-width="2" />
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="project-title">AI-Powered Threat Detection System</h3>
+                <p class="project-description">
+                    Developed an ML-based IDS using Random Forest and Decision Tree algorithms to
+                    classify network traffic as benign or malicious. Provides real-time alerts for
+                    zero-day threats with intelligent anomaly scoring.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Machine Learning</span>
+                    <span class="tech-tag">Random Forest</span>
+                    <span class="tech-tag">Network Security</span>
+                </div>
+                <div class="project-metrics">
+                    <div class="metric">
+                        <span class="metric-value">ML</span>
+                        <span class="metric-label">Powered IDS</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">2</span>
+                        <span class="metric-label">ML Algorithms</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">Real</span>
+                        <span class="metric-label">Time Alerts</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" id="project-3" data-tilt>
+                <div class="project-card-header">
+                    <div class="project-status">
+                        <span class="status-indicator completed"></span>
+                        <span>COMPLETED</span>
+                    </div>
+                    <span class="project-classification">RESEARCH</span>
+                </div>
+                <div class="project-icon-container">
+                    <div class="project-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="8" y="20" width="32" height="24" rx="3" />
+                            <path d="M14 20V14c0-5.5 4.5-10 10-10s10 4.5 10 10v6" />
+                            <circle cx="24" cy="32" r="4" />
+                            <path d="M24 36v4" />
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="project-title">Python Keylogger</h3>
+                <p class="project-description">
+                    Built an ethical keylogger for security research to simulate spyware behavior
+                    and analyze how EDR/antivirus solutions detect keystroke capture. Features
+                    encrypted logging and keyboard hook mechanisms for defensive research.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Keyboard Hook</span>
+                    <span class="tech-tag">Encrypted Logging</span>
+                    <span class="tech-tag">EDR Analysis</span>
+                </div>
+                <div class="project-metrics">
+                    <div class="metric">
+                        <span class="metric-value">AES</span>
+                        <span class="metric-label">Encrypted Logs</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">EDR</span>
+                        <span class="metric-label">Evasion Study</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">Ethical</span>
+                        <span class="metric-label">Research Tool</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card" id="project-4" data-tilt>
+                <div class="project-card-header">
+                    <div class="project-status">
+                        <span class="status-indicator completed"></span>
+                        <span>COMPLETED</span>
+                    </div>
+                    <span class="project-classification">RED TEAM</span>
+                </div>
+                <div class="project-icon-container">
+                    <div class="project-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M24 4l-6 18h-14l11 8-4 14 13-10 13 10-4-14 11-8h-14z" />
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="project-title">Proxychains & Anonymization Lab</h3>
+                <p class="project-description">
+                    Configured Proxychains + Tor for multi-hop anonymous routing in red team/OSINT
+                    exercises. Studied IP masking and traffic obfuscation techniques for defensive
+                    insight and operational security.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Proxychains</span>
+                    <span class="tech-tag">Tor</span>
+                    <span class="tech-tag">Kali Linux</span>
+                    <span class="tech-tag">OSINT</span>
+                </div>
+                <div class="project-metrics">
+                    <div class="metric">
+                        <span class="metric-value">Multi</span>
+                        <span class="metric-label">Hop Routing</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">IP</span>
+                        <span class="metric-label">Masking</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">OPSEC</span>
+                        <span class="metric-label">Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section certs-section">
+        <div class="section-header">
+            <span class="section-tag">// CREDENTIALS</span>
+            <h2 class="section-title">
+                <span class="section-number">06.</span> Security Clearance
+            </h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="certs-timeline">
+            <div class="timeline-line"></div>
+
+            <div class="cert-item">
+                <div class="cert-year">2025</div>
+                <div class="cert-card">
+                    <div class="cert-badge oscp">CISCO</div>
+                    <div class="cert-info">
+                        <h3>Cisco CyberOps Associate</h3>
+                        <p>Cisco Systems</p>
+                        <span class="cert-id">Security Operations Center Analysis</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cert-item">
+                <div class="cert-year">2025</div>
+                <div class="cert-card">
+                    <div class="cert-badge cissp">CRPO</div>
+                    <div class="cert-info">
+                        <h3>Certified Ransomware Protection Officer</h3>
+                        <p>Certified Professional</p>
+                        <span class="cert-id">Ransomware Defense & Incident Response</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cert-item">
+                <div class="cert-year">2024</div>
+                <div class="cert-card">
+                    <div class="cert-badge ceh">ISF</div>
+                    <div class="cert-info">
+                        <h3>Information Security Fundamentals</h3>
+                        <p>Security Foundation</p>
+                        <span class="cert-id">Core InfoSec Principles & Practices</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cert-item">
+                <div class="cert-year">2024</div>
+                <div class="cert-card">
+                    <div class="cert-badge comptia">CSB</div>
+                    <div class="cert-info">
+                        <h3>Cybersecurity Basics</h3>
+                        <p>Foundational Certification</p>
+                        <span class="cert-id">Network Security & Threat Landscape</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog / Intel Section -->
+    <section id="blog" class="section blog-section">
+        <div class="section-header">
+            <span class="section-tag">// KNOWLEDGE BASE</span>
+            <h2 class="section-title">
+                <span class="section-number">07.</span> Intelligence Feed
+            </h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="blog-grid">
+            <article class="blog-card" data-tilt>
+                <div class="blog-card-meta">
+                    <span class="blog-date">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="12"
+                            height="12">
+                            <rect x="3" y="4" width="18" height="18" rx="2" />
+                            <path d="M16 2v4M8 2v4M3 10h18" />
+                        </svg>
+                        SKILL AREA
+                    </span>
+                    <span class="blog-read-time">Web AppSec</span>
+                </div>
+                <h3 class="blog-title">Web Application Penetration Testing: SQLi, XSS & Auth Bypass</h3>
+                <p class="blog-excerpt">
+                    Hands-on experience finding SQL injection, Cross-Site Scripting and authentication
+                    bypass vulnerabilities using Burp Suite, SQLMap, and OWASP methodologies during
+                    real-world internship engagements.
+                </p>
+                <div class="blog-tags">
+                    <span class="blog-tag">SQLi</span>
+                    <span class="blog-tag">XSS</span>
+                    <span class="blog-tag">Burp Suite</span>
+                </div>
+                <a href="https://github.com/aryantomar898-gif" target="_blank" rel="noopener noreferrer"
+                    class="blog-read-more">
+                    <span>View on GitHub</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </article>
+
+            <article class="blog-card" data-tilt>
+                <div class="blog-card-meta">
+                    <span class="blog-date">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="12"
+                            height="12">
+                            <rect x="3" y="4" width="18" height="18" rx="2" />
+                            <path d="M16 2v4M8 2v4M3 10h18" />
+                        </svg>
+                        SKILL AREA
+                    </span>
+                    <span class="blog-read-time">Network Sec</span>
+                </div>
+                <h3 class="blog-title">Network Traffic Analysis & Anomaly Detection with Python</h3>
+                <p class="blog-excerpt">
+                    Building custom packet sniffers with Scapy, analyzing TCP/IP traffic patterns,
+                    and developing automated anomaly detection systems. Combining Wireshark expertise
+                    with Python scripting for deep network forensics.
+                </p>
+                <div class="blog-tags">
+                    <span class="blog-tag">Scapy</span>
+                    <span class="blog-tag">Packet Analysis</span>
+                    <span class="blog-tag">IDS</span>
+                </div>
+                <a href="https://github.com/aryantomar898-gif" target="_blank" rel="noopener noreferrer"
+                    class="blog-read-more">
+                    <span>View on GitHub</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </article>
+
+            <article class="blog-card" data-tilt>
+                <div class="blog-card-meta">
+                    <span class="blog-date">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="12"
+                            height="12">
+                            <rect x="3" y="4" width="18" height="18" rx="2" />
+                            <path d="M16 2v4M8 2v4M3 10h18" />
+                        </svg>
+                        SKILL AREA
+                    </span>
+                    <span class="blog-read-time">Red Team</span>
+                </div>
+                <h3 class="blog-title">Anonymization & OPSEC: Proxychains, Tor & Traffic Obfuscation</h3>
+                <p class="blog-excerpt">
+                    Configuring multi-hop anonymous routing for red team operations, studying IP masking
+                    techniques, and understanding traffic obfuscation from both offensive and defensive
+                    perspectives using Proxychains and Tor.
+                </p>
+                <div class="blog-tags">
+                    <span class="blog-tag">OPSEC</span>
+                    <span class="blog-tag">Tor</span>
+                    <span class="blog-tag">Anonymization</span>
+                </div>
+                <a href="https://github.com/aryantomar898-gif" target="_blank" rel="noopener noreferrer"
+                    class="blog-read-more">
+                    <span>View on GitHub</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="section-header">
+            <span class="section-tag">// ESTABLISH CONNECTION</span>
+            <h2 class="section-title">
+                <span class="section-number">08.</span> Secure Channel
+            </h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="contact-content">
+            <div class="contact-terminal">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="terminal-title">secure-channel — bash</span>
+                </div>
+                <div class="terminal-body contact-terminal-body">
+                    <p class="terminal-line">
+                        <span class="prompt">aryan@kali:~#</span>
+                        <span> ssh contact@aryan-tomar.sec</span>
+                    </p>
+                    <p class="terminal-line output">
+                        Establishing encrypted connection...
+                    </p>
+                    <p class="terminal-line output success">
+                        ✓ Connection established. Channel secure.
+                    </p>
+                    <p class="terminal-line output">
+                        Ready to receive transmissions.
+                    </p>
+                    <p class="terminal-line output">
+                        📍 Meerut, Uttar Pradesh, India
+                    </p>
+                    <p class="terminal-line output">
+                        📞 +91-8983463125
+                    </p>
+                </div>
+            </div>
+            <div class="contact-form-container">
+                <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="2a133323-d242-47b4-9d13-f40e9cee94b7">
+                    <input type="hidden" name="subject" value="🔒 New Message from Portfolio — Secure Channel">
+                    <input type="hidden" name="from_name" value="CIPHER Portfolio Contact Form">
+                    <input type="hidden" name="redirect" value="">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-name">
+                                <span class="label-icon">⟩</span> CALLSIGN
+                            </label>
+                            <input type="text" id="contact-name" name="name" placeholder="Enter your name..." required
+                                autocomplete="name">
+                            <div class="input-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">
+                                <span class="label-icon">⟩</span> SECURE EMAIL
+                            </label>
+                            <input type="email" id="contact-email" name="email" placeholder="your@email.com" required
+                                autocomplete="email">
+                            <div class="input-line"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">
+                            <span class="label-icon">⟩</span> SUBJECT
+                        </label>
+                        <input type="text" id="contact-subject" name="subject" placeholder="Mission details..."
+                            required>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">
+                            <span class="label-icon">⟩</span> ENCRYPTED MESSAGE
+                        </label>
+                        <textarea id="contact-message" name="message" rows="5" placeholder="Type your message here..."
+                            required></textarea>
+                        <div class="input-line"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit" id="contact-submit">
+                        <span class="btn-icon">⟩</span> TRANSMIT MESSAGE
+                        <div class="btn-loader"></div>
+                    </button>
+                </form>
+            </div>
+            <div class="contact-links">
+                <a href="https://github.com/aryantomar898-gif" target="_blank" rel="noopener noreferrer"
+                    class="contact-link-card" id="link-github">
+                    <div class="contact-link-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                        </svg>
+                    </div>
+                    <span class="contact-link-label">GitHub</span>
+                    <span class="contact-link-handle">@aryantomar898-gif</span>
+                </a>
+                <a href="https://www.linkedin.com/in/tomar-aryan-228149326" target="_blank" rel="noopener noreferrer"
+                    class="contact-link-card" id="link-linkedin">
+                    <div class="contact-link-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </div>
+                    <span class="contact-link-label">LinkedIn</span>
+                    <span class="contact-link-handle">Aryan Tomar</span>
+                </a>
+                <a href="mailto:jobaryantomar898@gmail.com" class="contact-link-card" id="link-email">
+                    <div class="contact-link-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                            <path d="M22 4l-10 8L2 4" />
+                        </svg>
+                    </div>
+                    <span class="contact-link-label">Email</span>
+                    <span class="contact-link-handle">jobaryantomar898@gmail.com</span>
+                </a>
+                <a href="tel:+918983463125" class="contact-link-card" id="link-phone">
+                    <div class="contact-link-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path
+                                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                        </svg>
+                    </div>
+                    <span class="contact-link-label">Phone</span>
+                    <span class="contact-link-handle">+91-8983463125</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="brand-bracket">[</span>
+                <span class="brand-text">ARYAN</span>
+                <span class="brand-bracket">]</span>
+            </div>
+            <p class="footer-text">
+                <span class="footer-encrypted">Designed & Built with 🔒 by Aryan Tomar</span>
+            </p>
+            <p class="footer-copyright">
+                © 2026 All rights reserved. B.Tech CSE (AI) | MIET Meerut
+            </p>
+            <div class="footer-pgp">
+                <span>Location: </span>
+                <code>Meerut, Uttar Pradesh, India</code>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
